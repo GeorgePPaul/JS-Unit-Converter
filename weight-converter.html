@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+
+        <a href="index.html">Temperature<br>Converter</a>
+        <a href="length-converter.html">Length<br>Converter</a>
+        <a href="weight-converter.html">Weight<br>Converter</a>
+
+    </div>
+    <br>
+
+    <form>
+        <h1>Weigth<br>Converter:</h1>
+        <input type="number" id="textBox" value="0"><br> 
+
+        <input type="radio" id="toKilos" name="unit">
+        <label for="toKilos">Pounds ➡ Kilos</label><br>
+
+        <input type="radio" id="toPounds" name="unit">
+        <label for="toPounds">Kilos ➡ Pounds</label><br>
+
+        <button type="button" id="submit" onclick="convertWeight()">submit</button>
+        <p id="result"></p>
+    </form>
+
+    <script src="index.js"></script>
+</body>
+</html>
